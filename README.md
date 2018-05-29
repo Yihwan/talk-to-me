@@ -1,4 +1,4 @@
-# [Talk to Me](https://yihwan.github.io/todo-list/)
+# [Talk to Me](https://yihwan.github.io/talk-to-me/)
 With cool accents too
 
 Web Speech API. *HTML/CSS skeleton provided by [Wes' JavaScript30](https://javascript30.com/)*
