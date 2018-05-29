@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700');
+
+
 html {
   font-size: 10px;
   box-sizing: border-box;
@@ -10,29 +13,20 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background-color:#3BC1AC;
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color:#1B1B1D;
   display:flex;
   min-height: 100vh;
   align-items: center;
-
-  background-image:
-  radial-gradient(circle at 100% 150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent),
-  radial-gradient(circle at 0    150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent),
-  radial-gradient(circle at 50%  100%, #42D2BB 10%, #3BC1AC 11%, #3BC1AC 23%, #42D2BB 24%, #42D2BB 30%, #3BC1AC 31%, #3BC1AC 43%, #42D2BB 44%, #42D2BB 50%, #3BC1AC 51%, #3BC1AC 63%, #42D2BB 64%, #42D2BB 71%, transparent 71%, transparent),
-  radial-gradient(circle at 100% 50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent),
-  radial-gradient(circle at 0    50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent);
-  background-size:100px 50px;
 }
-
 
 .voiceinator {
   padding:2rem;
-  width:50rem;
+  width:40rem;
   margin:0 auto;
-  border-radius:1rem;
+  border-radius:5px;
   position: relative;
-  background:white;
+  background: #f4f4f5;
   overflow: hidden;
   z-index: 1;
   box-shadow:0 0 5px 5px rgba(0,0,0,0.1);
@@ -42,14 +36,14 @@ h1 {
   width:calc(100% + 4rem);
   margin: -2rem 0 2rem -2rem;
   padding:.5rem;
-  background: #ffc600;
-  border-bottom: 5px solid #F3C010;
+  background: #21ce99;
   text-align: center;
   font-size: 5rem;
   font-weight: 100;
-  font-family: 'Pacifico', cursive;
-  text-shadow:3px 3px 0 #F3C010;
-
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  color: #f4f4f5;
+  font-size: 42px;
 }
 
 .voiceinator input,
@@ -61,30 +55,56 @@ h1 {
   margin:10px 0;
   padding:10px;
   border:0;
-  font-size: 2rem;
-  background:#F7F7F7;
+  font-size: 1.8rem;
+  background:#f4f4f5;
   outline:0;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.voiceinator textarea:hover, select:hover {
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 13px 3px rgba(14,13,13,.25);
+  -moz-box-shadow: 0px 0px 13px 3px rgba(14,13,13,.25);
+  box-shadow: 0px 0px 13px 3px rgba(14,13,13,.25);
+}
+
+.voiceinator input[type="range"]:hover, select:hover {
+  cursor: pointer;
+}
+
+.voiceinator label {
+  font-size: 14px;
 }
 
 textarea {
   height: 20rem;
 }
 
-input[type="select"] {
-
+.voiceinator input[type="range"] {
+  margin-top: 0;
 }
 
 .voiceinator button {
-  background:#ffc600;
+  border-radius: 5px;
   border:0;
   width: 49%;
   float:left;
-  font-family: 'Pacifico', cursive;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
   margin-bottom: 0;
   font-size: 2rem;
-  border-bottom: 5px solid #F3C010;
   cursor:pointer;
   position: relative;
+  color: #f4f4f5;
+;
+}
+
+.voiceinator #stop {
+  background-color: #f45531;
+}
+
+.voiceinator #speak {
+  background-color: #21ce99;
 }
 
 .voiceinator button:active {
